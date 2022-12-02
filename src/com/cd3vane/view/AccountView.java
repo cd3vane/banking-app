@@ -26,15 +26,10 @@ public class AccountView extends JFrame {
         balanceOutput.setText("Your current balance: *****");
         accountOwner.setText("Hello, " + myAccount.getAccountOwner().getName());
 
-
         JButton toggleBalance = new JButton("Toggle Balance");
-
         ViewBalanceListener viewBalanceListener = new ViewBalanceListener();
-
         toggleBalance.addActionListener(viewBalanceListener);
 
-
-        // Add Components
         accountView.add(accountOwner);
         accountView.add(toggleBalance);
         accountView.add(balanceOutput);

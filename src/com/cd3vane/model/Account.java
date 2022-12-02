@@ -1,8 +1,16 @@
 package com.cd3vane.model;
 
+import java.util.List;
+
 public class Account {
+
+    public enum accountType {
+        CHECKING, SAVING
+    }
     private User accountOwner;
     private double balance;
+
+
 
     public Account(User owner){
         accountOwner = owner;
@@ -17,4 +25,5 @@ public class Account {
     public User getAccountOwner() {
         return accountOwner;
     }
+
 }
